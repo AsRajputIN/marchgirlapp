@@ -8,7 +8,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
 .navbar-brand {
     display: flex;
     flex-wrap: nowrap;
@@ -482,7 +481,7 @@ body {
     padding-right: 80px;
 }
 
-.promotional-section h2 {
+.promotional-section {
     font-size: 3.5rem;
     font-weight: 800;
     line-height: 1.1;
@@ -491,7 +490,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-.content-text {
+/* .content-text {
     font-size: 1.25rem;
     line-height: 1.5;
     color: #333;
@@ -509,7 +508,7 @@ body {
 .content-text em {
     font-style: normal;
     color: #666;
-}
+} */
 
 .learn-more-btn {
     display: inline-block;
@@ -596,9 +595,9 @@ body {
         margin-bottom: 30px;
     }
 
-    .content-text {
+    /* .content-text {
         font-size: 1.15rem;
-    }
+    } */
 
     .promotional-section-alt .image-col {
         margin-top: 0;
@@ -617,9 +616,9 @@ body {
         margin-bottom: 25px;
     }
 
-    .content-text {
+    /* .content-text {
         font-size: 1.1rem;
-    }
+    } */
 
     .promotional-section .content-col,
     .promotional-section-alt .content-col {
@@ -640,11 +639,7 @@ body {
 }
 
 .product-showcase h2 {
-    font-size: 2.8rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 60px;
-    letter-spacing: -0.02em;
+ color: #000;
 }
 
 .product-grid {
@@ -705,9 +700,9 @@ body {
 
 /* Responsive Styles for Product Showcase */
 @media (max-width: 1200px) {
-    .product-showcase h2 {
+    /* .product-showcase h2 {
         font-size: 2.4rem;
-    }
+    } */
 }
 
 @media (max-width: 991px) {
@@ -715,10 +710,10 @@ body {
         padding: 80px 0;
     }
 
-    .product-showcase h2 {
+    /* .product-showcase h2 {
         font-size: 2rem;
         margin-bottom: 40px;
-    }
+    } */
 
     .product-item {
         margin-bottom: 30px;
@@ -730,10 +725,10 @@ body {
         padding: 60px 0;
     }
 
-    .product-showcase h2 {
+    /* .product-showcase h2 {
         font-size: 1.8rem;
         margin-bottom: 30px;
-    }
+    } */
 
     .product-item {
         margin-bottom: 20px;
