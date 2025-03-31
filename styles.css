@@ -8,19 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-<<<<<<< HEAD
-=======
-
-
-.bg-third {
-    background-color: #faf6ed;
-}
-
->>>>>>> 954ca8c (final part)
 .navbar-brand {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
     font-family: serif;
     font-size: 2rem;
     color: var(--primary-color) !important;
@@ -108,21 +96,18 @@ body {
 
 .mobile-menu-content {
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .mobile-menu-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
 }
 
 .close-btn {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
     background: none;
     border: none;
     font-size: 2.5rem;
@@ -490,7 +475,7 @@ body {
     padding-right: 80px;
 }
 
-.promotional-section {
+.promotional-section h2 {
     font-size: 3.5rem;
     font-weight: 800;
     line-height: 1.1;
@@ -499,7 +484,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-/* .content-text {
+.content-text {
     font-size: 1.25rem;
     line-height: 1.5;
     color: #333;
@@ -517,7 +502,7 @@ body {
 .content-text em {
     font-style: normal;
     color: #666;
-} */
+}
 
 .learn-more-btn {
     display: inline-block;
@@ -604,9 +589,9 @@ body {
         margin-bottom: 30px;
     }
 
-    /* .content-text {
+    .content-text {
         font-size: 1.15rem;
-    } */
+    }
 
     .promotional-section-alt .image-col {
         margin-top: 0;
@@ -625,9 +610,9 @@ body {
         margin-bottom: 25px;
     }
 
-    /* .content-text {
+    .content-text {
         font-size: 1.1rem;
-    } */
+    }
 
     .promotional-section .content-col,
     .promotional-section-alt .content-col {
@@ -645,63 +630,27 @@ body {
 .product-showcase {
     padding: 100px 0;
     background-color: var(--secondary-color);
-    position: relative;
-    overflow: hidden;
-}
-
-.product-showcase::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(250, 246, 237, 0.3), transparent);
-    z-index: 1;
-    pointer-events: none;
-}
-
-.product-showcase .container {
-    position: relative;
-    z-index: 2;
 }
 
 .product-showcase h2 {
-<<<<<<< HEAD
- color: #000;
-=======
     font-size: 2.8rem;
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 60px;
     letter-spacing: -0.02em;
-    transform: translateY(var(--parallax-speed));
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
->>>>>>> 954ca8c (final part)
 }
 
 .product-grid {
     margin-bottom: 40px;
-    position: relative;
 }
 
 .product-item {
     margin-bottom: 40px;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.product-item.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .product-card {
     position: relative;
     overflow: hidden;
-    transform: translateY(var(--parallax-speed-card));
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product-image {
@@ -749,9 +698,9 @@ body {
 
 /* Responsive Styles for Product Showcase */
 @media (max-width: 1200px) {
-    /* .product-showcase h2 {
+    .product-showcase h2 {
         font-size: 2.4rem;
-    } */
+    }
 }
 
 @media (max-width: 991px) {
@@ -759,18 +708,13 @@ body {
         padding: 80px 0;
     }
 
-    /* .product-showcase h2 {
+    .product-showcase h2 {
         font-size: 2rem;
         margin-bottom: 40px;
-<<<<<<< HEAD
-    } */
-=======
-        transform: none;
     }
->>>>>>> 954ca8c (final part)
 
-    .product-card {
-        transform: none;
+    .product-item {
+        margin-bottom: 30px;
     }
 }
 
@@ -779,10 +723,10 @@ body {
         padding: 60px 0;
     }
 
-    /* .product-showcase h2 {
+    .product-showcase h2 {
         font-size: 1.8rem;
         margin-bottom: 30px;
-    } */
+    }
 
     .product-item {
         margin-bottom: 20px;
@@ -1124,113 +1068,4 @@ body {
 
 .nav-link.dropdown-toggle::after {
     display: none;
-}
-
-/* CTA Section Styles */
-.cta-section {
-    height: 220px;
-    display: flex;
-    align-items: center;
-    background-color: #faf6ed;
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(117, 69, 68, 0.03), transparent);
-    pointer-events: none;
-}
-
-.cta-content {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.cta-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 10px;
-    color: var(--text-primary);
-    position: relative;
-    padding-bottom: 20px;
-}
-
-.cta-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 2px;
-    background: var(--accent-color);
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 16px 40px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #000;
-    background: transparent;
-    border: 1px solid #000;
-    border-radius: 50px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-    box-shadow: inset 0 0 0 0 #000;
-}
-
-.cta-button:hover {
-    color: #fff;
-    box-shadow: inset 300px 0 0 0 #000;
-}
-
-/* Responsive Styles for CTA Section */
-@media (max-width: 1200px) {
-    .cta-title {
-        font-size: 3rem;
-    }
-}
-
-@media (max-width: 991px) {
-    .cta-section {
-        padding: 80px 0;
-    }
-
-    .cta-title {
-        font-size: 2.5rem;
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 576px) {
-    .cta-section {
-        padding: 60px 0;
-    }
-
-    .cta-title {
-        font-size: 2rem;
-        margin-bottom: 25px;
-        padding-bottom: 15px;
-    }
-
-    .cta-button {
-        padding: 14px 30px;
-        font-size: 0.9rem;
-        width: 100%;
-        max-width: 280px;
-    }
 }
