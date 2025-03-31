@@ -8,6 +8,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
+<<<<<<< HEAD
+=======
+
+
+.bg-third {
+    background-color: #faf6ed;
+}
+
+>>>>>>> 954ca8c (final part)
 .navbar-brand {
     display: flex;
     flex-wrap: nowrap;
@@ -636,23 +645,63 @@ body {
 .product-showcase {
     padding: 100px 0;
     background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.product-showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(250, 246, 237, 0.3), transparent);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.product-showcase .container {
+    position: relative;
+    z-index: 2;
 }
 
 .product-showcase h2 {
+<<<<<<< HEAD
  color: #000;
+=======
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 60px;
+    letter-spacing: -0.02em;
+    transform: translateY(var(--parallax-speed));
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+>>>>>>> 954ca8c (final part)
 }
 
 .product-grid {
     margin-bottom: 40px;
+    position: relative;
 }
 
 .product-item {
     margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.product-item.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .product-card {
     position: relative;
     overflow: hidden;
+    transform: translateY(var(--parallax-speed-card));
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product-image {
@@ -713,10 +762,15 @@ body {
     /* .product-showcase h2 {
         font-size: 2rem;
         margin-bottom: 40px;
+<<<<<<< HEAD
     } */
+=======
+        transform: none;
+    }
+>>>>>>> 954ca8c (final part)
 
-    .product-item {
-        margin-bottom: 30px;
+    .product-card {
+        transform: none;
     }
 }
 
@@ -1077,7 +1131,7 @@ body {
     height: 220px;
     display: flex;
     align-items: center;
-    background-color: var(--bg-light);
+    background-color: #faf6ed;
     position: relative;
     overflow: hidden;
 }

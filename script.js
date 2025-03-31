@@ -48,6 +48,55 @@ document.addEventListener('DOMContentLoaded', function() {
     animateElements.forEach(element => {
         observer.observe(element);
     });
+
+    // Product Showcase Parallax Effect
+    const productShowcase = document.querySelector('.product-showcase');
+    const title = productShowcase.querySelector('h2');
+    const cards = productShowcase.querySelectorAll('.product-card');
+    const productItems = productShowcase.querySelectorAll('.product-item');
+
+    // Initialize Intersection Observer for fade-in effect
+    const productObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    // Observe each product item
+    productItems.forEach(item => {
+        productObserver.observe(item);
+    });
+
+    // Parallax scroll effect
+    window.addEventListener('scroll', () => {
+        const rect = productShowcase.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+        if (isVisible) {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * 0.25;
+            const cardRate = scrolled * 0.15;
+
+            requestAnimationFrame(() => {
+                title.style.setProperty('--parallax-speed', `${rate}px`);
+                cards.forEach(card => {
+                    card.style.setProperty('--parallax-speed-card', `${cardRate}px`);
+                });
+            });
+        }
+    });
+
+    // Initial check for items in viewport
+    productItems.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+            item.classList.add('visible');
+        }
+    });
 }); 
 
 
