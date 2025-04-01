@@ -1,379 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Merchgirls - Premium Branded Merchandise</title>
     <!-- Meta tags for SEO -->
-    <meta name="description" content="Merchgirls - Creating high-quality custom promotional merchandise for brands that want to stand out.">
-    <meta name="keywords" content="merchandise, promotional products, branded merchandise, corporate gifts">
-    
+    <meta
+      name="description"
+      content="Merchgirls - Creating high-quality custom promotional merchandise for brands that want to stand out."
+    />
+    <meta
+      name="keywords"
+      content="merchandise, promotional products, branded merchandise, corporate gifts"
+    />
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fonts.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fonts.css" />
+  </head>
+  <body>
     <!-- Desktop Header -->
     <header class="desktop-header d-none d-lg-block">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#">Merchgirls</a>
-                <div class="navbar-nav mx-auto">
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            ABOUT US
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                            <li><a class="dropdown-item" href="/aboutus/who-are-we.html">WHO ARE WE?</a></li>
-                            <li><a class="dropdown-item" href="/aboutus/why-merch.html">WHY MERCH</a></li>
-                            <li><a class="dropdown-item" href="/aboutus/our-testimonials.html">TESTIMONIALS</a></li>
-                            <li><a class="dropdown-item" href="/aboutus/sustainability.html">SUSTAINABILITY</a></li>
-                            <li><a class="dropdown-item" href="/aboutus/merch-journal.html">MERCH JOURNAL</a></li>
-                            <li><a class="dropdown-item" href="/aboutus/blogs.html">BLOGS</a></li>
-                        </ul>
-                    </div>
-                    <a class="nav-link" href="#">OUR SERVICES</a>
-                    <a class="nav-link" href="#">OUR WORK</a>
-                    <div class="nav-item dropdown">
-                    <a class="nav-link" href="#">CONTACT US</a>
-                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                        <li><a class="dropdown-item" href="#">CONTACT US</a></li>
-                        <li><a class="dropdown-item" href="#">BOOK A MEETING</a></li>
-                        <li><a class="dropdown-item" href="#">GET A MENU</a></li>
-                    </ul>
-                 </div>
-                </div>
-                <button class="btn menu-btn">GET A MENU</button>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">Merchgirls</a>
+          <div class="navbar-nav mx-auto">
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ABOUT US
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="/aboutus/who-are-we.html"
+                    >WHO ARE WE?</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/aboutus/why-merch.html"
+                    >WHY MERCH</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/aboutus/our-testimonials.html"
+                    >TESTIMONIALS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/aboutus/sustainability.html"
+                    >SUSTAINABILITY</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/aboutus/merch-journal.html"
+                    >MERCH JOURNAL</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/aboutus/blogs.html">BLOGS</a>
+                </li>
+              </ul>
             </div>
-        </nav>
+            <a class="nav-link" href="#">OUR SERVICES</a>
+            <a class="nav-link" href="#">OUR WORK</a>
+            <div class="nav-item dropdown">
+              <a class="nav-link" href="#">CONTACT US</a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li><a class="dropdown-item" href="#">CONTACT US</a></li>
+                <li><a class="dropdown-item" href="#">BOOK A MEETING</a></li>
+                <li><a class="dropdown-item" href="#">GET A MENU</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn menu-btn">GET A MENU</button>
+        </div>
+      </nav>
     </header>
 
     <!-- Mobile/Tablet Header -->
     <header class="mobile-header d-lg-none">
-        <nav class="navbar">
-            <div class="container">
-                <a class="navbar-brand" href="#">Merchgirls</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
-                    <div class="hamburger-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </button>
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">Merchgirls</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileMenu"
+          >
+            <div class="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-        </nav>
-        
-        <!-- Mobile Menu Overlay -->
-        <div class="collapse navbar-collapse mobile-menu" id="mobileMenu">
-            <div class="mobile-menu-content">
-                <div class="mobile-menu-header">
-                    <a class="navbar-brand" href="#">Merchgirls</a>
-                    <button class="close-btn" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
-                        <span>×</span>
-                    </button>
-                </div>
-                <div class="mobile-menu-items">
-                    <a href="#">ABOUT US</a>
-                    <a href="#">OUR SERVICES</a>
-                    <a href="#">OUR WORK</a>
-                    <a href="#">CONTACT US</a>
-                </div>
-                <div class="mobile-menu-footer">
-                    <button class="btn menu-btn w-100">GET A MENU</button>
-                </div>
-            </div>
+          </button>
         </div>
+      </nav>
+
+      <!-- Mobile Menu Overlay -->
+      <div class="collapse navbar-collapse mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+          <div class="mobile-menu-header">
+            <a class="navbar-brand" href="#">Merchgirls</a>
+            <button
+              class="close-btn"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobileMenu"
+            >
+              <span>×</span>
+            </button>
+          </div>
+          <div class="mobile-menu-items">
+            <a href="#">ABOUT US</a>
+            <a href="#">OUR SERVICES</a>
+            <a href="#">OUR WORK</a>
+            <a href="#">CONTACT US</a>
+          </div>
+          <div class="mobile-menu-footer">
+            <button class="btn menu-btn w-100">GET A MENU</button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Hero Slider Section -->
     <section class="hero-slider">
-        <div class="slider-container">
-            <div class="slide active">
-               
-            </div>
-        </div>
+      <div class="slider-container">
+        <div class="slide active"></div>
+      </div>
     </section>
 
     <!-- Promotional Section -->
     <section class="promotional-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 content-col">
-                    <h1>
-                        <strong>STAND OUT WITH OUR TOP QUALITY PROMOTIONAL PRODUCTS</strong> 
-                    </h1>
-                    <div class="content-text">
-                        <p>We're first and foremost a <strong>creative branded merchandising agency</strong>. Established in 2015, we quickly became the go-to merch solution for companies that wanted something different to the traditional offering.</p>
-                        <p>We live to <strong>create promotional products</strong> that get attention for all the right reasons and approach everything we do with <em>Quality, Design & Purpose</em>.</p>
-                        <a href="#" class="learn-more-btn">LEARN MORE</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 image-col">
-                    <div class="image-wrapper">
-                        <img src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/9d2f6aaf-8ef8-4c43-a390-6ab0c0cb796b/SWF+EDM+TILE+1+and+COPY+%2839%29.png?format=2500w" alt="Promotional Products" class="promo-image">
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 content-col">
+            <h1>
+              <strong
+                >STAND OUT WITH OUR TOP QUALITY PROMOTIONAL PRODUCTS</strong
+              >
+            </h1>
+            <div class="content-text">
+              <p>
+                We're first and foremost a
+                <strong>creative branded merchandising agency</strong>.
+                Established in 2015, we quickly became the go-to merch solution
+                for companies that wanted something different to the traditional
+                offering.
+              </p>
+              <p>
+                We live to <strong>create promotional products</strong> that get
+                attention for all the right reasons and approach everything we
+                do with <em>Quality, Design & Purpose</em>.
+              </p>
+              <div class="center-items">
+                <a href="#" class="learn-more-btn align-items-center"
+                  >LEARN MORE</a
+                >
+              </div>
             </div>
-        </div>
-
-
-        <br>
-        <br>
-        <br>
-        <br><br><br>
-
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 image-col order-lg-1 order-2">
-                    <div class="image-wrapper">
-                        <img src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/eccbc2c2-71ab-49d4-b895-db9f809bc101/SWF+EDM+TILE+1+and+COPY+%284%29.gif?format=2500w" alt="Leather Tag" class="promo-image">
-                    </div>
-                </div>
-                <div class="col-lg-6 content-col order-lg-2 order-1">
-                    <h1>
-                        <strong>MERCHGIRLS ARE DOING MERCH DIFFERENTLY</strong> 
-                    </h1>
-                    <div class="content-text">
-                        <p>Our purpose is to evolve <em>corporate merchandise</em> beyond the 'slap a logo on it' mentality and instead create products with design integrity and innate appeal.</p>
-                        <p>We create <strong>high quality custom promotional merchandise for clients</strong> who want to extend their brand into the hands of their target audience.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-lg-6 image-col">
+            <div class="image-wrapper">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/9d2f6aaf-8ef8-4c43-a390-6ab0c0cb796b/SWF+EDM+TILE+1+and+COPY+%2839%29.png?format=2500w"
+                alt="Promotional Products"
+                class="promo-image"
+              />
             </div>
+          </div>
         </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 image-col order-lg-1 order-2">
+            <div class="image-wrapper">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/eccbc2c2-71ab-49d4-b895-db9f809bc101/SWF+EDM+TILE+1+and+COPY+%284%29.gif?format=2500w"
+                alt="Leather Tag"
+                class="promo-image"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 content-col order-lg-2 order-1">
+            <h1>
+              <strong>MERCHGIRLS ARE DOING MERCH DIFFERENTLY</strong>
+            </h1>
+            <div class="content-text">
+              <p>
+                Our purpose is to evolve <em>corporate merchandise</em> beyond
+                the 'slap a logo on it' mentality and instead create products
+                with design integrity and innate appeal.
+              </p>
+              <p>
+                We create
+                <strong
+                  >high quality custom promotional merchandise for
+                  clients</strong
+                >
+                who want to extend their brand into the hands of their target
+                audience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-
-     <!-- Scrolling Text Section -->
-     <section class="scrolling-text-section">
-        <div class="scrolling-text-container">
-            <div class="scrolling-text">
-                <span>SEE WHY OUR CLIENTS CHOOSE US &nbsp;•&nbsp; SEE WHY OUR CLIENTS CHOOSE US &nbsp;•&nbsp; SEE WHY OUR CLIENTS CHOOSE US &nbsp;•&nbsp;</span>
-                <span>SEE WHY OUR CLIENTS CHOOSE US &nbsp;•&nbsp; SEE WHY OUR CLIENTS CHOOSE US &nbsp;•&nbsp; SEE WHY OUR CLIENTS CHOOSE US &nbsp;•&nbsp;</span>
-            </div>
+    <!-- Scrolling Text Section -->
+    <section class="scrolling-text-section">
+      <div class="scrolling-text-container">
+        <div class="scrolling-text">
+          <span
+            >SEE WHY OUR CLIENTS CHOOSE US &nbsp;•&nbsp; SEE WHY OUR CLIENTS
+            CHOOSE US &nbsp;•&nbsp; SEE WHY OUR CLIENTS CHOOSE US
+            &nbsp;•&nbsp;</span
+          >
+          <span
+            >SEE WHY OUR CLIENTS CHOOSE US &nbsp;•&nbsp; SEE WHY OUR CLIENTS
+            CHOOSE US &nbsp;•&nbsp; SEE WHY OUR CLIENTS CHOOSE US
+            &nbsp;•&nbsp;</span
+          >
         </div>
+      </div>
     </section>
-
 
     <!-- Product Showcase Section -->
     <section class="product-showcase">
-        <div class="container">
-            <h2 class="text-center">
-                <strong>PROMOTIONAL MERCHANDISE TO PERFECTLY FIT YOUR BUSINESS</strong>
-            </h2>
-            
-            <div class="row product-grid">
-                <!-- Product 1 -->
-                <div class="col-lg-4 col-md-6 product-item">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/9a68e141-a6c0-4b43-aadb-4a23b59e3280/QAGOMA-suite-01.jpg?format=1000w" alt="QAGOMA Products">
-                        </div>
-                        <h3>QAGOMA</h3>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="text-center">
+          <strong
+            >PROMOTIONAL MERCHANDISE TO PERFECTLY FIT YOUR BUSINESS</strong
+          >
+        </h2>
 
-                <!-- Product 2 -->
-                <div class="col-lg-4 col-md-6 product-item">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/813cee5c-39ac-4b2a-a1fe-f62e1d5444cf/Barham-Avos-01.jpg?format=1000w" alt="Barham Avocados">
-                        </div>
-                        <h3>Barham Avocados</h3>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="col-lg-4 col-md-6 product-item">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/404a6b60-ffaf-4ded-b964-f4f219855857/Thiess-suite-01.jpg?format=1000w" alt="Thiess Products">
-                        </div>
-                        <h3>Thiess</h3>
-                    </div>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="col-lg-4 col-md-6 product-item">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/329b0f1d-179a-4ca7-a4a7-f753b570f081/Qube-suite-02.jpg?format=1000w" alt="Sample Product 1">
-                        </div>
-                        <h3>Custom Merch</h3>
-                    </div>
-                </div>
-
-                <!-- Product 5 -->
-                <div class="col-lg-4 col-md-6 product-item">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/a603ea51-aec7-499d-bf28-14b181426f61/Frasers-Property-1+%28small%29.jpg?format=1000w" alt="Sample Product 2">
-                        </div>
-                        <h3>Branded Items</h3>
-                    </div>
-                </div>
-
-                <!-- Product 6 -->
-                <div class="col-lg-4 col-md-6 product-item">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/11fafa3e-a58a-493d-a809-7d34c40be59e/Lulu+Store-01.jpg?format=1000w" alt="Sample Product 3">
-                        </div>
-                        <h3>Promotional Gear</h3>
-                    </div>
-                </div>
+        <div class="row product-grid">
+          <!-- Product 1 -->
+          <div class="col-lg-4 col-md-6 product-item">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/9a68e141-a6c0-4b43-aadb-4a23b59e3280/QAGOMA-suite-01.jpg?format=1000w"
+                  alt="QAGOMA Products"
+                />
+              </div>
+              <h3>QAGOMA</h3>
             </div>
+          </div>
 
-            <div class="text-center mt-5">
-                <a href="#" class="see-more-btn">See More</a>
+          <!-- Product 2 -->
+          <div class="col-lg-4 col-md-6 product-item">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/813cee5c-39ac-4b2a-a1fe-f62e1d5444cf/Barham-Avos-01.jpg?format=1000w"
+                  alt="Barham Avocados"
+                />
+              </div>
+              <h3>Barham Avocados</h3>
             </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-lg-4 col-md-6 product-item">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/404a6b60-ffaf-4ded-b964-f4f219855857/Thiess-suite-01.jpg?format=1000w"
+                  alt="Thiess Products"
+                />
+              </div>
+              <h3>Thiess</h3>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-lg-4 col-md-6 product-item">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/329b0f1d-179a-4ca7-a4a7-f753b570f081/Qube-suite-02.jpg?format=1000w"
+                  alt="Sample Product 1"
+                />
+              </div>
+              <h3>Custom Merch</h3>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="col-lg-4 col-md-6 product-item">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/a603ea51-aec7-499d-bf28-14b181426f61/Frasers-Property-1+%28small%29.jpg?format=1000w"
+                  alt="Sample Product 2"
+                />
+              </div>
+              <h3>Branded Items</h3>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="col-lg-4 col-md-6 product-item">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/11fafa3e-a58a-493d-a809-7d34c40be59e/Lulu+Store-01.jpg?format=1000w"
+                  alt="Sample Product 3"
+                />
+              </div>
+              <h3>Promotional Gear</h3>
+            </div>
+          </div>
         </div>
+
+        <div class="text-center mt-5">
+          <a href="#" class="see-more-btn">See More</a>
+        </div>
+      </div>
     </section>
 
-   
     <section class="brand-showcase">
-        <div class="brand-carousel-container">
-            <div class="brand-carousel-viewport">
-                <div class="brand-carousel-track" id="brandCarousel">
-                    <!-- Images will be added here -->
-                </div>
-            </div>
-            
-            <div class="brand-carousel-controls">
-                <button class="brand-carousel-button" id="prevBrandBtn">
-                    <svg viewBox="0 0 60 30">
-                        <path class="arrow-path" d="M15.9,23.7L7.1,15l8.7-8.7" fill="none"></path>
-                        <path class="arrow-line" d="M52.9,15H8.5" fill="none"></path>
-                    </svg>
-                </button>
-                <button class="brand-carousel-button" id="nextBrandBtn">
-                    <svg viewBox="0 0 60 30">
-                        <path class="arrow-path" d="M44.1,6.3l8.7,8.7l-8.7,8.7" fill="none"></path>
-                        <path class="arrow-line" d="M7.1,15h44.4" fill="none"></path>
-                    </svg>
-                </button>
-            </div>
+      <div class="brand-carousel-container">
+        <div class="brand-carousel-viewport">
+          <div class="brand-carousel-track" id="brandCarousel">
+            <!-- Images will be added here -->
+          </div>
         </div>
-      </section>
+
+        <div class="brand-carousel-controls">
+          <button class="brand-carousel-button" id="prevBrandBtn">
+            <svg viewBox="0 0 60 30">
+              <path
+                class="arrow-path"
+                d="M15.9,23.7L7.1,15l8.7-8.7"
+                fill="none"
+              ></path>
+              <path class="arrow-line" d="M52.9,15H8.5" fill="none"></path>
+            </svg>
+          </button>
+          <button class="brand-carousel-button" id="nextBrandBtn">
+            <svg viewBox="0 0 60 30">
+              <path
+                class="arrow-path"
+                d="M44.1,6.3l8.7,8.7l-8.7,8.7"
+                fill="none"
+              ></path>
+              <path class="arrow-line" d="M7.1,15h44.4" fill="none"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
 
     <!-- Featured Merch Journals Section -->
     <section class="merch-journals">
-        <div class="container">
-            <h2 class="text-center mb-5">FEATURED MERCH JOURNALS: LATEST IN THE WORLD OF BRANDED MERCHANDISE</h2>
-            
-            <div class="row">
-                <!-- Journal Card 1 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="journal-card">
-                        <div class="journal-image">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/1732760302501-SJPEJ15NXWZV0120LHEA/MG+-+Bliss+Shower+Steamer+Assorted+1.jpg?format=1000w" alt="Bliss Shower Steamers">
-                        </div>
-                        <div class="journal-content">
-                            <h3>Our Bliss Shower Steamers - Winner of the AFG's Most Sustainable Merchandise Award with BankWest</h3>
-                            <p>At Merchgirls, we strive to collaborate with leading companies across a wide range of industries.</p>
-                            <a href="#" class="read-more">Read More</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="text-center mb-5">
+          FEATURED MERCH JOURNALS: LATEST IN THE WORLD OF BRANDED MERCHANDISE
+        </h2>
 
-                <!-- Journal Card 2 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="journal-card">
-                        <div class="journal-image">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/081e7978-9c72-43cc-901a-bbcc7a930f3f/Holiday+Gifting+Made+Easy+with+Merchgirls.jpg?format=1500w" alt="Holiday Gifting">
-                        </div>
-                        <div class="journal-content">
-                            <h3>Holiday Gifting Made Easy with Merchgirls</h3>
-                            <p>The holiday season is all about connection, gratitude, and the perfect gift to show appreciation.</p>
-                            <a href="#" class="read-more">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Journal Card 3 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="journal-card">
-                        <div class="journal-image">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/a3a8abb5-3393-41ce-9284-26a47097f2ff/MerchGirls_30_060724_4013+%281%29.jpg?format=1000w" alt="Industry Leaders">
-                        </div>
-                        <div class="journal-content">
-                            <h3>Industry Leaders Trust Merchgirls for Creative Merch</h3>
-                            <p>At Merchgirls, we pride ourselves on partnering with some of the top companies across various industries.</p>
-                            <a href="#" class="read-more">Read More</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="row">
+          <!-- Journal Card 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="journal-card">
+              <div class="journal-image">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/1732760302501-SJPEJ15NXWZV0120LHEA/MG+-+Bliss+Shower+Steamer+Assorted+1.jpg?format=1000w"
+                  alt="Bliss Shower Steamers"
+                />
+              </div>
+              <div class="journal-content">
+                <h3>
+                  Our Bliss Shower Steamers - Winner of the AFG's Most
+                  Sustainable Merchandise Award with BankWest
+                </h3>
+                <p>
+                  At Merchgirls, we strive to collaborate with leading companies
+                  across a wide range of industries.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+              </div>
             </div>
+          </div>
 
-            <div class="text-center mt-4">
-                <a href="#" class="show-more-btn">Show More</a>
+          <!-- Journal Card 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="journal-card">
+              <div class="journal-image">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/081e7978-9c72-43cc-901a-bbcc7a930f3f/Holiday+Gifting+Made+Easy+with+Merchgirls.jpg?format=1500w"
+                  alt="Holiday Gifting"
+                />
+              </div>
+              <div class="journal-content">
+                <h3>Holiday Gifting Made Easy with Merchgirls</h3>
+                <p>
+                  The holiday season is all about connection, gratitude, and the
+                  perfect gift to show appreciation.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+              </div>
             </div>
+          </div>
+
+          <!-- Journal Card 3 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="journal-card">
+              <div class="journal-image">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/a3a8abb5-3393-41ce-9284-26a47097f2ff/MerchGirls_30_060724_4013+%281%29.jpg?format=1000w"
+                  alt="Industry Leaders"
+                />
+              </div>
+              <div class="journal-content">
+                <h3>Industry Leaders Trust Merchgirls for Creative Merch</h3>
+                <p>
+                  At Merchgirls, we pride ourselves on partnering with some of
+                  the top companies across various industries.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="text-center mt-4">
+          <a href="#" class="show-more-btn">Show More</a>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <!-- Logo Section -->
-                <div class="footer-logo">
-                    <a href="/">
-                        <img src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/e2d7ca4d-3f84-4366-81d7-31d80d6f9537/merchgirls-icon-black-rgb-900px-w-72ppi.png?format=300w" alt="Merchgirls Logo" class="logo">
-                    </a>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <!-- Logo Section -->
+          <div class="footer-logo">
+            <a href="/">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/5f4dbf552006d865dded91f9/e2d7ca4d-3f84-4366-81d7-31d80d6f9537/merchgirls-icon-black-rgb-900px-w-72ppi.png?format=300w"
+                alt="Merchgirls Logo"
+                class="logo"
+              />
+            </a>
+          </div>
 
-                <!-- Contact Info -->
-                <div class="footer-contact">
-                    <p>P: <a href="tel:+61386186980">+61 3 8618 6980</a></p>
-                    <p>E: <a href="mailto:hello@merchgirls.com.au">hello@merchgirls.com.au</a></p>
-                    <p class="tagline">Merchandise That's Twice As Nice</p>
-                    <p class="copyright">Copyright 2025 © Merchgirls</p>
-                </div>
+          <!-- Contact Info -->
+          <div class="footer-contact">
+            <p>P: <a href="tel:+61386186980">+61 3 8618 6980</a></p>
+            <p>
+              E:
+              <a href="mailto:hello@merchgirls.com.au"
+                >hello@merchgirls.com.au</a
+              >
+            </p>
+            <p class="tagline">Merchandise That's Twice As Nice</p>
+            <p class="copyright">Copyright 2025 © Merchgirls</p>
+          </div>
 
-                <!-- Links -->
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="/about">About us</a></li>
-                        <li><a href="/promotional">Promotional</a></li>
-                        <li><a href="/products">Products</a></li>
-                        <li><a href="/merch">Merch</a></li>
-                        <li><a href="/journal">Journal</a></li>
-                        <li><a href="/sustainability">Sustainability</a></li>
-                        <li><a href="/faqs">FAQs</a></li>
-                        <li><a href="/privacy">Privacy Policy</a></li>
-                    </ul>
-                </div>
+          <!-- Links -->
+          <div class="footer-links">
+            <ul>
+              <li><a href="/about">About us</a></li>
+              <li><a href="/promotional">Promotional</a></li>
+              <li><a href="/products">Products</a></li>
+              <li><a href="/merch">Merch</a></li>
+              <li><a href="/journal">Journal</a></li>
+              <li><a href="/sustainability">Sustainability</a></li>
+              <li><a href="/faqs">FAQs</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
 
-                <!-- Actions -->
-                <div class="footer-actions">
-                    <div class="action-buttons">
-                        <a href="/book" class="btn btn-primary">Book a meeting</a>
-                        <a href="/menu" class="btn btn-primary">Get a menu</a>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                    <a href="/signup" class="btn btn-secondary">Sign me up</a>
-                </div>
+          <!-- Actions -->
+          <div class="footer-actions">
+            <div class="action-buttons">
+              <a href="/book" class="btn btn-primary">Book a meeting</a>
+              <a href="/menu" class="btn btn-primary">Get a menu</a>
             </div>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+            </div>
+            <a href="/signup" class="btn btn-secondary">Sign me up</a>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/your-kit-code.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
-</body>
-</html> 
+  </body>
+</html>
